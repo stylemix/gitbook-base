@@ -64,6 +64,8 @@ $query = QueryBuilder::for(Listing::class)->build();
 $results = $query->get();
 ```
 
+{% page-ref page="../query-builder.md" %}
+
 Build form fields for fillable attributes:
 
 ```php
@@ -85,4 +87,6 @@ $fields = EntityForm::forAttributes(
 //   "label": "Level",
 // }]
 ```
+
+{% page-ref page="../entity-form.md" %}
 
