@@ -9,7 +9,6 @@
 * [Field types](forms/field-types/README.md)
   * [RelationField explained](forms/field-types/relationfield-explained.md)
 * [Form string translations](forms/form-string-translations.md)
-* [Customization](forms/customization.md)
 
 ## Entity / Attributes
 
@@ -19,12 +18,6 @@
 * [Attribute types](entity-attributes/attribute-types.md)
 * [Entity form](entity-attributes/entity-form.md)
 * [Query builder](entity-attributes/query-builder.md)
-
-## Front-end
-
-* [HTTP Endpoints](front-end/http-endpoints.md)
-* [Resource APIs](front-end/api-resources/README.md)
-  * [Non-Resource like APIs](front-end/api-resources/non-resource-like-apis.md)
 
 ## Misc
 

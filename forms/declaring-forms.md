@@ -59,63 +59,7 @@ class ContactController extends Controller
 }
 ```
 
-In front-end:
-
-{% code title="ContactForm.vue" %}
-```markup
-<template>
-  <form method="post" @submit.prevent="submit">
-    <fields />
-    <button
-      type="submit"
-      class="btn btn-primary">
-      Send
-    </button>
-  </form>
-</template>
-
-<script>
-  import { FormMixin } from 'stylemix-base'
-
-  export default {
-    mixins: [ FormMixin ],
-
-    data() {
-      return {
-        model: {},
-      };
-    },
-
-    mounted() {
-      this.$http.get('/contact-form')
-        .then(({ data }) => {
-          this.model = data.data
-          this.setFields(data.fields)
-        })
-    },
-
-    methods: {
-      submit() {
-        this.errors.clear();
-
-        let formData = { ...this.model }
-        
-        if (needFormData) {
-          let formData = this.formData(this.model)
-          formData.append('_method', 'POST')
-        }
-
-        // send form data
-        this.$http.post('/contact-form', formData)
-          .then(() => {
-            alert('Sucessfully submitted!')
-          })
-      }
-    }
-  }
-</script>
-```
-{% endcode %}
+View [Vue Base package form implementation](http://docs.stylemix.biz/manuals/vue-base/#/).
 
 ### Initial form values
 
